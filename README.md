@@ -1,4 +1,5 @@
-Description:
+Description
+
 This repository contains the test project completed for the assessment at eBEYONDS. The project includes HTML, CSS (Sass), and JavaScript files for building a responsive website. It incorporates features such as a Bootstrap navbar, image sections with animations, team member cards, and a footer. The project also demonstrates usage of SCSS for styling, along with JavaScript for adding interactivity. Feel free to explore the codebase and use it as a reference or starting point for your own projects.
 
 Key Features:
