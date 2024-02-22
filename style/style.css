@@ -1,0 +1,178 @@
+/* ------------------------------------------------------------------------Navbar Style */
+.navbar.fixed-top {
+    transition: top 0.3s;
+}
+
+.navbar-brand {
+    margin-right: 15px;
+}
+
+.company-name {
+    font-size: 15px;
+    color: #cd4e00;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-item .nav-link.active-nav-link {
+    background-color: #13131395;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item .nav-link.active-nav-link:hover {
+    background-color: #18181875;
+}
+
+.navbar-nav .nav-item.dropdown .nav-link.dropdown-toggle {
+    min-width: 150px;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    color: #495057;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.2rem;
+}
+
+/* ----------------------------------------------------------------------------Drop down Menu style */
+.dropdown-menu {
+    border: none;
+    background-color: #fff;
+}
+
+.selected-language {
+    margin-right: 50px;
+}
+
+/* -------------------------------------------------------------------------------main image style */
+.image-section {
+    background-image: url('../img/MainImage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 68vh;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.311);
+}
+
+/* ----------------------------------------------------------------------------------Black square on the main image .fade-in-animation */
+.black-square {
+    position: absolute;
+    bottom: 250px;
+    right: 10px;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.789);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.black-square-text {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* ------------------------------------------------------------------------------------For responsive all device (black Square) */
+@media (max-width: 768px) {
+    .black-square {
+        width: 400px;
+        height: 150px;
+        bottom: 420px;
+    }
+
+    .black-square-text {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .black-square {
+        width: 250px;
+        height: 120px;
+        bottom: 425px;
+        right: 5px;
+    }
+
+    .black-square-text {
+        font-size: 25px;
+    }
+}
+
+/* ----------------------------------------------------------------------our Teams are here text style  */
+.topic-name{
+    color: rgb(217, 83, 0);
+}
+
+.underline {
+    background-image: url('../img/our_teams_border.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 20px;
+    margin: auto;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.team-member img {
+    max-width: 50%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover img {
+    transform: scale(1.1); 
+}
+
+.team-member h5 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    margin-bottom: 0;
+}
+
+.fade-in-animation {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.scroll-down {
+    height: 2000px;
+}
+
+/* ---------------------------------------------------------------------------Footer style */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* -------------------------------------------------------------------------Fade In animation media quary */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
